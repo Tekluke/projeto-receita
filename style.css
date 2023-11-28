@@ -1,0 +1,237 @@
+/* Index do Site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --default-border: 0.1rem solid rgba(255, 255, 255, 0.35);
+  --alternative-border: 0.5rem solid var(--default-color);
+  --default-border-radius: 1.2rem;
+  --default-font: "Roboto", sans-serif;
+  --alternative-font: "Poppins", sans-serif;
+  --default-color: white;
+  --alternative-color: rgba(60, 255, 0, 0.849);
+}
+
+body {
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--default-font);
+  font-size: 1.4rem;
+  color: var(--default-color);
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "hero main"
+    "hero main"
+    "hero main";
+  grid-gap: 8rem;
+  margin: 3rem;
+}
+
+/* Hero Index */
+
+aside {
+  grid-area: hero;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+aside h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 50rem;
+}
+
+aside h1 span,
+main h2 span {
+  color: var(--alternative-color);
+}
+
+/* Main Index */
+
+main {
+  grid-area: main;
+  height: 60rem;
+  width: 70rem;
+  padding: 2rem 4rem 4rem;
+
+  background-color: rgba(0, 0, 0, 0.115);
+  border-radius: var(--default-border-radius);
+}
+
+main h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Recipe list Index */
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 10% 45% 45%;
+  grid-template-areas:
+    "list src"
+    "list filter"
+    "list filter";
+  gap: 1rem 1rem;
+  margin: 2rem 0rem 3rem;
+}
+
+main .recipe-list #recipes {
+  grid-area: list;
+  height: 30rem;
+
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2rem;
+  gap: 2rem 1rem;
+
+  font-family: var(--alternative-font);
+  list-style: none;
+
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+}
+
+.recipe-list #recipes p,
+ #recipes a, #filters button, footer label {
+  font-size: 1.75rem;
+}
+
+.recipe-list #recipes a {
+  width: 20rem;
+  height: 4rem;
+
+  color: var(--alternative-color);
+
+  border-radius: 1.2rem;
+  border: var(--default-border);
+
+  text-align: center;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+}
+
+/* Src bar Index */
+
+nav {
+  grid-area: src;
+  height: 3.3rem;
+
+  display: flex;
+  align-content: center;
+
+  font-family: var(--alternative-font);
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+}
+
+nav button,
+nav input, #filters button, footer button {
+  background-color: transparent;
+  border: none;
+}
+
+nav input {
+  width: 30rem;
+  padding-left: 1rem;
+  font-size: 1.75rem;
+  border-radius: var(--default-border-radius);
+  color: var(--default-color);
+}
+
+nav button, footer button {
+  width: 3.5rem;
+  border-radius: var(--default-border-radius);
+}
+
+nav button i, footer button i {
+  font-size: 1.75rem;
+  color: var(--alternative-color);
+  border-radius: var(--default-border-radius);
+}
+
+/* Filter List Index */
+
+.filter-list {
+  grid-area: filter;
+  height: 26rem;
+
+  font-family: var(--alternative-font);
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+
+  display: flex;
+  align-content: flex-start;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  gap: 1rem 0rem;
+}
+
+.filter-list h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.filter-list #filters {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+
+  font-family: var(--alternative-font);
+  list-style: none;
+}
+
+.filter-list #filters button {
+  width: 12rem;
+  height: 4rem;
+  
+  color: var(--default-color);
+  
+  border-radius: var(--default-border-radius);
+  border: var(--default-border);
+  
+  text-align: center;
+  padding: 0.6rem 1rem;
+}
+
+/* footer main */
+
+footer div {
+  font-family: var(--alternative-font);
+  margin-top: 3rem;
+  display: flex;
+  align-content: center;
+}
+
+footer input {
+  width: 52rem;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+  
+  background-color: transparent;
+  font-family: var(--alternative-font);
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+  color: var(--default-color);
+}
+
+/* Hover do Index */
+
+.content button:hover, .content a:hover, #filters button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}

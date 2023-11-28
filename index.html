@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Receitas Imperdiveis</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/fontawesome-icons-6.4.2/css/all.css" />
+
+    <link rel="icon" href="assets/logo.svg" />
+    <title>Receitas Imperdíveis</title>
+  </head>
+  <body>
+    <div class="content">
+      <aside>
+        <img src="/assets/logo.svg" alt="" />
+        <h1>
+          Receitas <span><i class="fa-solid fa-utensils"></i> Imperdíveis</span>
+        </h1>
+      </aside>
+      <main>
+        <div class="header-main">
+          <h2>Nossas <span>receitas</span></h2>
+        </div>
+        <div class="recipe-list">
+          <ul id="recipes">
+            <li>
+              <p>Receita de <a href="cookie.html">Cookie</a></p>
+            </li>
+            <li>
+              <p>Receita de <a href="waffle.html">Waffle</a></p>
+            </li>
+            <li>
+              <p>Receita de <a href="cakeChoc.html">Bolo de Chocolate</a></p>
+            </li>
+          </ul>
+          <nav>
+            <input type="text" placeholder="buscar receitas..." />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </nav>
+          <div class="filter-list">
+            <h3>Filtros</h3>
+
+            <ul id="filters">
+              <li>
+                <button>Salgados</button>
+              </li>
+              <li>
+                <button>Massas</button>
+              </li>
+              <li>
+                <button>Assados</button>
+              </li>
+              <li>
+                <button>Vegetarianas</button>
+              </li>
+              <li>
+                <button>Veganas</button>
+              </li>
+              <li>
+                <button>Sobremesas</button>
+              </li>
+              <li>
+                <button>Bebidas</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <h2>
+            Quer ver uma receita nova por aqui? <span>nos envie sugestões</span>
+          </h2>
+          <div>
+            <label for="new-recipes"> Sugestões: </label>
+            <input type="text" id="new-recipes" />
+            <button><i class="fa-regular fa-paper-plane"></i></button>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
